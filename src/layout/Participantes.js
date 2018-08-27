@@ -11,13 +11,11 @@ class Participantes extends React.Component{
 	}
 
 	handleSubmit(key){
-		//let valor = this.props.selectedPart + 1;
 		let arrayKey = this.props.selectedPart;
 		if(arrayKey.indexOf(key) >= 0)
 			arrayKey.splice(arrayKey.indexOf(key),1)
 		else
 			arrayKey.push(key)
-		console.log(arrayKey.indexOf(key),'arraykey');
 		this.props.updateSelected(arrayKey)
 	}
 
@@ -49,7 +47,6 @@ class Participantes extends React.Component{
 
 
 let mapStoreToProps = store => {
-	console.log(store)
 	return {
 		selectedPart : store.Participantes.selectedPart
 	}
