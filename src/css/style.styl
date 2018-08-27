@@ -1,0 +1,79 @@
+*
+	padding: 0
+	margin: 0
+	border: 0
+	font-family: "verdana"
+	
+header,.home,footer
+	margin:0 auto
+	width:100%
+	max-width:1300px
+	
+h1
+	color: #000
+	font-size: 26px
+	padding: 10px 0 20px 0
+	
+	
+footer
+	text-align: center
+	padding: 5px 0
+	
+.home
+	border 1px solid #000
+	display: flex
+	
+.participantes
+	width: 70%
+	box-sizing: border-box
+	padding: 20px
+	h2
+		font-size: 24px
+		margin: 0 0 20px 10px
+	article
+		display: flex
+		margin: 0 0 10px 0
+		padding: 5px 10px
+		cursor: pointer
+		border: 1px solid transparent
+		&:hover,&.selected
+			border: 1px solid #999
+		&.selected
+			background-color: #EEE;
+	img
+		width: 25%
+		height: auto
+	div
+		box-sizing: border-box
+		padding: 0px 10px
+		h3
+			font-size: 20px
+		p
+			font-size: 16px
+
+.sidebar
+	width: 30%
+	background-color: #EBEBEB
+	box-sizing: border-box
+	padding: 20px
+	h2
+		font-size: 24px
+		margin: 0 0 50px 10px
+	[class^="btn"]
+		width: 100%
+		box-sizing: border-box
+		padding: 20px
+		color: #000
+		display: block
+		text-align: center
+		font-size: 24px
+		margin: 0 0 20px 0
+		cursor: pointer
+		border: 2px solid transparent
+		&:hover
+			border: 2px solid #000
+	.btn-aprobar
+		background-color: #A2D39C
+	.btn-rechazar
+		background-color: #FE4B4E
+		
